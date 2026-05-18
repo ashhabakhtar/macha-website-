@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "powder",
             categoryLabel: "Ceremonial Grade",
             price: 38.00,
-            image: "/matcha_ceremonial.png",
+            image: "./matcha_ceremonial.png",
             description: "The highest ceremonial grade matcha sourced from Uji, Kyoto. Extremely smooth with deep, rich umami and a vibrant emerald green hue.",
             benefits: ["100% Organic Stone-Ground Tencha", "Unparalleled Natural Sweetness & Umami", "Perfect for Traditional Preparation"]
         },
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "powder",
             categoryLabel: "Premium Grade",
             price: 28.00,
-            image: "/matcha_starter_kit.png",
+            image: "./matcha_starter_kit.png",
             description: "An exceptional daily-drinking matcha, offering a clean, balanced energy boost. Delightfully smooth with notes of sweet grass and a light creamy finish.",
             benefits: ["Great for Everyday Drinking", "Rich in L-Theanine & Antioxidants", "Sourced Directly from Kyoto Farms"]
         },
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "powder",
             categoryLabel: "Culinary Grade",
             price: 18.00,
-            image: "/hero_matcha_bowl.png",
+            image: "./hero_matcha_bowl.png",
             description: "A vibrant, bold matcha specifically crafted for cooking, baking, and matcha lattes. Retains its deep flavor and green color even when mixed with other ingredients.",
             benefits: ["Optimal for Baking, Smoothies & Lattes", "Bold, Slightly Astringent Flavor Profile", "High Antioxidant Concentration"]
         },
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "powder",
             categoryLabel: "Roasted Green Tea",
             price: 20.00,
-            image: "/hojicha_powder.png",
+            image: "./hojicha_powder.png",
             description: "Slow-roasted green tea powder featuring a toasted, nutty, and naturally sweet caramel-like aroma. Very low in caffeine, making it ideal for relaxing evening lattes.",
             benefits: ["Very Low Caffeine (Child-Friendly)", "Comforting Toasty, Nutty Flavor", "100% Organic Roasted Tencha Leaves"]
         },
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "teaware",
             categoryLabel: "Artisanal Ware",
             price: 45.00,
-            image: "/matcha_chawan.png",
+            image: "./matcha_chawan.png",
             description: "Individually handcrafted ceramic bowl with a rustic, earthy dark clay base and a stunning soft green forest glaze. Ergonomically shaped to hold and whisk comfortably.",
             benefits: ["Handmade by Kyoto Artisans", "Rustic Glaze - No Two Bowls Are Identical", "Flat Bottom Ideal for Perfect Whisking"]
         },
@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "teaware",
             categoryLabel: "Premium Utensils",
             price: 18.00,
-            image: "/matcha_starter_kit.png",
+            image: "./matcha_starter_kit.png",
             description: "Traditional 100-prong whisk crafted from a single piece of premium golden bamboo. Essential for creating the signature silky, velvety matcha froth.",
             benefits: ["100 Prongs for Maximum Froth", "Crafted from Sustainable Golden Bamboo", "Traditional Japanese Tea Tool"]
         },
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "teaware",
             categoryLabel: "Teaware Essentials",
             price: 12.00,
-            image: "/whisk_stand.png",
+            image: "./whisk_stand.png",
             description: "An elegant, green-glazed ceramic stand (Kusenaoshi) designed to maintain the curved shape of your bamboo chasen, preventing mold and expanding its lifespan.",
             benefits: ["Preserves Whisk Shape & Curvature", "Earthy Matcha-Green Ceramic Glaze", "Ensures Proper Whisk Ventilation"]
         },
@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "teaware",
             categoryLabel: "Gift Sets",
             price: 75.00,
-            image: "/matcha_gift_set.png",
+            image: "./matcha_gift_set.png",
             description: "The complete package for modern matcha rituals. Features a handmade ceramic bowl, a golden bamboo whisk, a ceramic whisk stand, a bamboo scoop, and a 30g tin of Ceremonial Matcha.",
             benefits: ["Complete Ceremony Essentials", "Beautifully Boxed - Perfect for Gifts", "Saves Over 20% Compared to Individual Items"]
         },
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "blends",
             categoryLabel: "Sweetened Blends",
             price: 22.00,
-            image: "/matcha_latte_mix.png",
+            image: "./matcha_latte_mix.png",
             description: "A premium blend of micro-ground Japanese matcha and natural unrefined cane sugar. Perfect for quick and delicious iced or hot matcha lattes at home.",
             benefits: ["Naturally Sweetened", "Dissolves Instantly in Milk or Water", "Cafe-Quality Taste at Home"]
         },
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "blends",
             categoryLabel: "Baking Blends",
             price: 15.00,
-            image: "/matcha_cake_powder.png",
+            image: "./matcha_cake_powder.png",
             description: "Finely ground organic matcha blended with natural raising agents for light, fluffy, and vibrant green matcha cakes, cookies, and pastries.",
             benefits: ["Vibrant Emerald Baking Color", "Optimized Baking Consistency", "Organic Ingredient Sourcing"]
         },
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "blends",
             categoryLabel: "On-The-Go",
             price: 16.00,
-            image: "/matcha_latte_mix.png",
+            image: "./matcha_latte_mix.png",
             description: "Convenient single-serve matcha sachets lightly sweetened with pure cane sugar. Pop one in your bag, shake with cold water or milk, and enjoy anywhere, anytime.",
             benefits: ["10 Convenient Single-Serve Packs", "Ideal for Shaker Bottles", "Smooth, Instant Dissolving Formula"]
         },
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "teaware",
             categoryLabel: "Modern Tools",
             price: 24.00,
-            image: "/matcha_antioxidant.png",
+            image: "./matcha_antioxidant.png",
             description: "A high-powered, rechargeable handheld electric frother. Delivers smooth, clump-free matcha in seconds. Features multiple speed settings and a luxurious travel case.",
             benefits: ["Dual-Speed Rechargeable Motor", "Clump-Free Matcha in Under 10 Seconds", "Luxurious Minimal Matte Grip"]
         }
