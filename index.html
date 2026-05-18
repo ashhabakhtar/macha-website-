@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MATON | Premium Matcha</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-logo">MATON</div>
+            <nav class="header-nav">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#testimonial">Testimonial</a>
+            </nav>
+            <div class="header-utilities">
+                <a href="#signin">Sign In</a>
+                <a href="#cart" id="cart-btn">My Cart <span class="cart-badge" id="cart-badge-count" style="display: none;">0</span></a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="section dark-section hero-section" id="home">
+                <div class="container hero-grid">
+                    
+                    <!-- Left Column -->
+                    <div class="hero-left">
+                        <div class="hero-left-top">
+                            <span class="pill-badge">Free Starter Kits</span>
+                            <p>Discover the purity of our premium matcha, sourced directly from Uji, Japan.</p>
+                        </div>
+                        <div class="hero-thumbnails">
+                            <div class="thumb"><img src="/matcha_ceremonial.png" alt="Thumb 1"></div>
+                            <div class="thumb"><img src="/matcha_starter_kit.png" alt="Thumb 2"></div>
+                        </div>
+                        <div class="japanese-text">抹茶の芸術</div>
+                    </div>
+
+                    <!-- Center Column -->
+                    <div class="hero-center">
+                        <h1 class="hero-title">Best Matcha<br>in Town</h1>
+                        <div class="hero-image-container">
+                            <img src="/hero_matcha_bowl.png" alt="Premium Matcha Bowl" id="hero-main-img">
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="hero-right">
+                        <span class="pill-badge">Premium Grade</span>
+                        <h3>Ceremonial Matcha</h3>
+                        <p>Vibrant color, umami-rich flavor, and unparalleled smoothness.</p>
+                        <div class="product-weight">30gr</div>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Section 3: Starter Kit -->
+            <section class="section light-section starter-kit-section">
+                <div class="container starter-kit-container">
+                    <div class="starter-kit-imagery">
+                        <img src="/matcha_starter_kit.png" alt="Starter Kit Strip">
+                        <div class="price-anchor">$25</div>
+                        <div class="product-callout top-left">
+                            <span class="dot"></span>
+                            <div class="callout-content">
+                                <strong>Matcha Powder</strong>
+                                <p>30g ceremonial grade</p>
+                            </div>
+                        </div>
+                        <div class="product-callout bottom-right">
+                            <span class="dot"></span>
+                            <div class="callout-content">
+                                <strong>Bamboo Whisk</strong>
+                                <p>Traditional Chasen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Benefits -->
+            <section class="section light-section benefits-section">
+                <div class="container">
+                    <div class="benefits-top">
+                        <div class="benefits-headline">
+                            <h2>Experience Wellness<br>with Every Sip</h2>
+                        </div>
+                        <div class="benefits-tiles">
+                            <div class="benefit-tile">
+                                <div class="tile-img">
+                                    <img src="/matcha_antioxidant.png" alt="Anti Oxidant">
+                                </div>
+                                <span>Anti Oxidant</span>
+                            </div>
+                            <div class="benefit-tile">
+                                <div class="tile-img">
+                                    <img src="/matcha_relax.png" alt="Relax & Focus">
+                                </div>
+                                <span>Relax & Focus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-bottom">
+                        <div class="benefit-col">
+                            <div class="icon-circle"></div>
+                            <h4>Rich Flavor & Vibrant Color</h4>
+                            <p>A beautifully deep umami profile with sweet notes.</p>
+                        </div>
+                        <div class="benefit-col">
+                            <div class="icon-circle"></div>
+                            <h4>Authentic Japanese Matcha</h4>
+                            <p>Sourced directly from the best farms in Kyoto, Japan.</p>
+                        </div>
+                        <div class="benefit-col">
+                            <div class="icon-circle"></div>
+                            <h4>Health & Sustainability</h4>
+                            <p>Organic practices ensuring a healthier planet and body.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Product Collection -->
+            <section class="section light-section collection-section" id="products">
+                <div class="container">
+                    <h2 class="section-title">Discover the World of Matcha</h2>
+                    
+                    <!-- Search & Filter Toolbar -->
+                    <div class="products-toolbar">
+                        <div class="filter-tabs">
+                            <button class="filter-btn active" data-category="all">All</button>
+                            <button class="filter-btn" data-category="powder">Matcha Powder</button>
+                            <button class="filter-btn" data-category="teaware">Teaware</button>
+                            <button class="filter-btn" data-category="blends">Blends & Sweets</button>
+                        </div>
+                        <div class="search-container">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                            <input type="text" id="product-search" class="search-input" placeholder="Search our premium collection...">
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Product Grid Target -->
+                    <div id="dynamic-product-grid" class="dynamic-product-grid">
+                        <!-- Product cards rendered dynamically via JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: Essentials -->
+            <section class="section light-section essentials-section">
+                <div class="container">
+                    <h2 class="section-title text-center">Matcha Pairing Essentials</h2>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <img src="/matcha_latte_mix.png" alt="Matcha Latte Mix">
+                            <div class="essential-info">
+                                <h3>Matcha Latte Mix</h3>
+                                <span>$22</span>
+                            </div>
+                        </div>
+                        <div class="essential-card">
+                            <img src="/matcha_cake_powder.png" alt="Matcha Cake Powder">
+                            <div class="essential-info">
+                                <h3>Matcha Cake Powder</h3>
+                                <span>$15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Section 7: Footer -->
+        <footer class="section dark-section footer-section">
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <h2>Save up to 50% or more<br>on matcha powder</h2>
+                    <button class="btn-primary" style="margin-top: 2rem; margin-bottom: 2rem;">Get Starter Kit</button>
+                    
+                    <div class="footer-contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-text">akhtarashhab@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-text">+81 (75) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">Uji, Kyoto, Japan</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕒</span>
+                            <span class="contact-text">Mon - Fri: 9am - 6pm JST</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Shipping Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <img src="/matcha_ceremonial.png" alt="Decorative Matcha">
+                </div>
+            </div>
+            <div class="footer-bottom-author" style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; color: var(--color-text-muted);">
+                &copy; 2026 MATON Matcha. All rights reserved. Sourced from Uji, Kyoto. Designed & Developed by <strong>Ashhab Akhtar</strong>.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Cart Drawer and Backdrop Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>Your Cart</h3>
+            <button class="cart-drawer-close" id="cart-drawer-close">&times;</button>
+        </div>
+        <div class="cart-drawer-body" id="cart-drawer-body">
+            <!-- Cart items populated by JS -->
+        </div>
+        <div class="cart-drawer-footer">
+            <!-- Free Shipping Progress -->
+            <div class="free-shipping-progress">
+                <div class="shipping-text" id="shipping-text">Add <strong>$50.00</strong> more for Free Shipping!</div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="shipping-progress-bar"></div>
+                </div>
+            </div>
+            <div class="cart-summary-row">
+                <span class="cart-summary-total-label">Subtotal</span>
+                <span class="cart-summary-total-value" id="cart-subtotal">$0.00</span>
+            </div>
+            <button class="btn-checkout" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Quick-View Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+            <div class="modal-img-wrapper">
+                <img src="" alt="" class="modal-img" id="modal-product-img">
+            </div>
+            <div class="modal-content-body">
+                <span class="modal-product-tag" id="modal-product-category">Premium Grade</span>
+                <h2 class="modal-product-title" id="modal-product-title">Ceremonial Matcha</h2>
+                <div class="modal-product-price" id="modal-product-price">$38.00</div>
+                <p class="modal-product-desc" id="modal-product-desc">Vibrant color, umami-rich flavor, and unparalleled smoothness.</p>
+                
+                <div class="modal-product-benefits">
+                    <h5>Key Benefits:</h5>
+                    <div class="modal-benefits-list" id="modal-product-benefits-list">
+                        <!-- Benefits populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <div class="modal-qty-selector">
+                        <button class="qty-btn" id="modal-qty-minus">-</button>
+                        <span class="modal-qty-val" id="modal-qty-val">1</span>
+                        <button class="qty-btn" id="modal-qty-plus">+</button>
+                    </div>
+                    <button class="btn-primary" id="modal-add-to-cart-btn" style="flex-grow: 1;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
